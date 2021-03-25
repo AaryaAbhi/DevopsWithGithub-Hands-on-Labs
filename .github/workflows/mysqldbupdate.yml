@@ -8,7 +8,7 @@ on:
     paths:
     - readmeformysqlupdate.md
 env:
-  AZURE_MYSQL_SERVERNAME: vijaymysqldbserver.mysql.database.azure.com 
+  AZURE_MYSQL_SERVERNAME: aaryamysqldbserver.mysql.database.azure.com 
 
 jobs:
   mysqlupdate:
@@ -25,7 +25,7 @@ jobs:
       with:
         server-name: ${{ env.AZURE_MYSQL_SERVERNAME }}
         connection-string: ${{ secrets.AZURE_MYSQL_CONNECTION_STRING }}
-        sql-file: './vijaymysqldatabase.sql'
+        sql-file: './aaryamysqldatabase.sql'
 
     # Azure logout 
     - name: logout
